@@ -35,8 +35,8 @@ class Walker extends SimpleFileVisitor<Path> {
         if(dir.getNameCount() == 4){
             String sv = dir.getName(dir.getNameCount()-1).toString();
             rutas.put(sv, dir);
-            System.out.println(i++ + ". " + sv + " -> " + dir);
-//            i++;
+//            System.out.println(i++ + ". " + sv + " -> " + dir);
+            i++;
         }
 
         return super.preVisitDirectory(dir, attrs);
@@ -78,6 +78,7 @@ class Mover extends SimpleFileVisitor<Path> {
             } catch (IOException ioe) {
                 System.out.println(ioe.getMessage() + "\n" +
                         "No se pudo mover archivo.");
+                ioe.printStackTrace();
             }
         }
         return super.visitFile(file, attrs);

@@ -15,8 +15,8 @@ public class Main {
 //        Descargador desc = new Descargador();
 //        desc.start();
 
-//        DescargadorAutomatico descAutom = new DescargadorAutomatico();
-//        descAutom.start();
+        DescargadorAutomatico descAutom = new DescargadorAutomatico();
+        descAutom.start();
 
 //        Unificador uni = new Unificador();
 //        uni.inspeccionar();
@@ -34,7 +34,6 @@ public class Main {
 //        ContadorHojas contador = new ContadorHojas();
 //        contador.start();
 
-
 //        Desmenusador nino = new Desmenusador();
 //        nino.start();
 
@@ -44,8 +43,11 @@ public class Main {
 //        Movedor move = new Movedor();
 //        move.start();
 
-        Movedor2 move2 = new Movedor2();
-        move2.start();
+//        Movedor2 move2 = new Movedor2();
+//        move2.start();
+
+//        MuestraENEL muestra = new MuestraENEL();
+//        muestra.start();
 
 //        TercerPaquete paquete = new TercerPaquete();
 //        paquete.start();
